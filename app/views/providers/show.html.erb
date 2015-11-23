@@ -11,6 +11,6 @@
 | Email | <%= @provider.email%> <br>
 | Phone | <%= @provider.phone_number%> <br>
 | Bio | <%= @provider.bio%> <br>
-
+<!--Although this is easy to read, there are probably alternatives instead of using br -->
 <%= link_to "Edit", edit_provider_path(@provider) %> <br>
 <%= link_to "Back to All Providers", providers_path %>

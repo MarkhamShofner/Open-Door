@@ -45,5 +45,11 @@ class SeekersController < ApplicationController
     def seeker_params
       params.require(:seeker).permit(:first_name, :last_name, :gender, :photo_url, :city, :email, :phone_number, :bio , :user_id)
     end
-
+# Since you call @seek = Seeker.find (params[:id]) on each line, I would add a private method to clean up the code
+# for example, I would add at the top^ before_action :set_seeker, only: [:show, :edit, :update, :destroy]
+# and then down here add
+# def set_seeker
+  # @seeker = Seeker.find(params[:id])
+# end
+# that way you don't have have the @seeker = Seeker.find on each line
 end
