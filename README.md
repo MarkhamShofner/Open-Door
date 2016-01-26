@@ -13,7 +13,7 @@ link to heroku - https://open-door-dc.herokuapp.com/postings
 
 **Approach Taken**
 - determine a potential need in the market
-- create and ERD
+- create an ERD
 - create wireframes
 - write user stories
 - iteratively move forward
