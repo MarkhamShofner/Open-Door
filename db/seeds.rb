@@ -66,5 +66,4 @@ end
 #   random_seeker = Seeker.all.sample
 #   random_posting = "
 #   random_posting.create_interest(seeker: random_seeker)
-#
 # end
