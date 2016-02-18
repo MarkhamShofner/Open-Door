@@ -8,6 +8,7 @@
   <div class="col-md-4"><strong>Email</strong></div>
 </div>
 
+<!-- iterate through providers using erb -->
 <% @providers.each do |provider| %>
   <div class = "index-provider">
     <div class="col-md-4"><%= link_to provider.organization_name, provider %></div>
